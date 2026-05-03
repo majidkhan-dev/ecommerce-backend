@@ -54,38 +54,6 @@ PORT=3000
 npm start
 ```
 
-## API Endpoints
-
-### Auth
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/auth/register | Register a new user |
-| POST | /api/auth/login | Login and get token |
-
-### Products
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /api/products | Get all products |
-| POST | /api/products | Add a new product |
-| PUT | /api/products/:id | Update a product |
-| DELETE | /api/products/:id | Delete a product |
-
-### Orders
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/orders | Place a new order |
-| GET | /api/orders/:id | Get order by ID |
-| GET | /api/orders/user/:userId | Get all orders for a user |
-
-## Database Schema
-
-```
-Users       — id, name, email, password, created_at
-Products    — id, name, description, price, stock
-Orders      — id, user_id, total, status, created_at
-OrderItems  — id, order_id, product_id, quantity, price
-```
-
 ## License
 
 MIT — feel free to use, modify, and distribute.
